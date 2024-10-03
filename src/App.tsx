@@ -1,13 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
+import AllJobListings from './pages/AllJobListings';
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        {/* Add more routes here as needed */}
+        <Route path="/job-listings" element={<AllJobListings />} />
       </Routes>
     </Router>
   );
