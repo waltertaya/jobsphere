@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
               Job Listings
             </h1>
             <p className="self-stretch mt-6 text-2xl text-gray-100 rotate-[2.4492937051703357e-16rad] max-md:max-w-full">
-              Discover your next career move with ALX Graduate Jobs.
+              Discover your next career move with JobSphere.
             </p>
             <Link to="/explore-jobs" className="overflow-hidden px-5 py-3 mt-6 text-lg leading-loose bg-indigo-500 rounded-md border border-solid border-black border-opacity-0 rotate-[2.4492937051703357e-16rad]">
               Explore Jobs

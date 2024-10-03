@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
                 <div className="flex flex-col items-center w-full text-sm font-bold max-md:mt-7">
                   <div className="flex gap-3 w-52 max-w-full text-3xl text-zinc-900">
                     <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/92f31eb56999abf644233e1c0f153f9aa5c68d1f54f23952e0e990c991f52688?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1" alt="ALX Jobs Logo" className="object-contain shrink-0 w-12 rounded-md aspect-square" />
-                    <div className="grow shrink rotate-[2.4492937051703357e-16rad] w-[138px]">ALX Jobs</div>
+                    <div className="grow shrink rotate-[2.4492937051703357e-16rad] w-[138px]">JobSphere</div>
                   </div>
                   <h3 className="mt-12 text-xl text-center rotate-[2.4492937051703357e-16rad] text-zinc-700 max-md:mt-10">Subscribe to our newsletter</h3>
                   <form className="flex gap-px self-stretch mt-2 leading-loose">
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
             <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5ce5a849479916019f9ac1df75070a8e3ddf0a196649085e07234dbb4b587f3b?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1" alt="" className="object-contain shrink-0 my-auto w-4 aspect-square" />
           </div>
           <div className="flex gap-1.5 self-stretch my-auto text-sm leading-loose text-gray-700">
-            <span className="grow rotate-[2.4492937051703357e-16rad]">© 2024 Brand, Inc.</span>
+            <span className="grow rotate-[2.4492937051703357e-16rad]">© 2024 JobSpere, Inc.</span>
             <span className="my-auto text-xs leading-loose rotate-[2.4492937051703357e-16rad]">•</span>
             <Link to="/privacy" className="rotate-[2.4492937051703357e-16rad]">Privacy</Link>
             <span className="my-auto text-xs leading-loose rotate-[2.4492937051703357e-16rad]">•</span>
