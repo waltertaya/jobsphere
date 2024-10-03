@@ -29,7 +29,7 @@ const Header: React.FC = () => {
       <div className="flex shrink gap-2.5 my-auto text-3xl text-black basis-auto grow-0">
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/9883e4c1be7ffa1517087642051e3f22b623c074bd74019acbd2647de92a2efe?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/92f31eb56999abf644233e1c0f153f9aa5c68d1f54f23952e0e990c991f52688?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1"
           alt=""
           className="object-contain shrink-0 my-auto w-9 aspect-square"
         />
@@ -52,19 +52,19 @@ const Header: React.FC = () => {
             Job Listings
           </NavLink>
           <NavLink
-            href="/resources"
+            href="/"
             isActive={location.pathname === '/resources'}
           >
             Resources
           </NavLink>
           <NavLink
-            href="/about-us"
+            href="/"
             isActive={location.pathname === '/about-us'}
           >
             About us
           </NavLink>
           <NavLink
-            href="/contact-us"
+            href="/"
             isActive={location.pathname === '/contact-us'}
           >
             Contact Us

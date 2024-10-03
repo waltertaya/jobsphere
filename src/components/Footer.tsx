@@ -15,10 +15,6 @@ const Footer: React.FC = () => {
             <div className="flex gap-5 max-md:flex-col">
               <div className="flex flex-col w-[72%] max-md:ml-0 max-md:w-full">
                 <div className="flex flex-col items-center w-full text-sm font-bold max-md:mt-7">
-                  <div className="flex gap-3 w-52 max-w-full text-3xl text-zinc-900">
-                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/92f31eb56999abf644233e1c0f153f9aa5c68d1f54f23952e0e990c991f52688?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1" alt="ALX Jobs Logo" className="object-contain shrink-0 w-12 rounded-md aspect-square" />
-                    <div className="grow shrink rotate-[2.4492937051703357e-16rad] w-[138px]">JobSphere</div>
-                  </div>
                   <h3 className="mt-12 text-xl text-center rotate-[2.4492937051703357e-16rad] text-zinc-700 max-md:mt-10">Subscribe to our newsletter</h3>
                   <form className="flex gap-px self-stretch mt-2 leading-loose">
                     <div className="flex flex-auto gap-1.5 self-start px-3 py-2 bg-gray-200 rounded-md border border-solid border-black border-opacity-0 text-neutral-300">
