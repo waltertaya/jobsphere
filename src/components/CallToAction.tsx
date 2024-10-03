@@ -8,11 +8,8 @@ const CallToAction: React.FC = () => {
           Get hired faster!
         </h2>
         <p className="self-stretch mt-2 text-center rotate-[2.4492937051703357e-16rad] text-zinc-900 max-md:max-w-full">
-          Submit your resume today and connect with top employers in your field.
+        Explore a world of top-tier tech opportunities. Whether you're looking for remote flexibility or an on-site challenge, our platform connects you with the perfect roles to elevate your career. Your next great opportunity is just a click away.
         </p>
-        <button className="overflow-hidden px-5 py-3 mt-5 text-white whitespace-nowrap bg-indigo-500 rounded-md border border-solid border-black border-opacity-0 rotate-[2.4492937051703357e-16rad] w-[84px]">
-          Send
-        </button>
       </div>
     </section>
   );
