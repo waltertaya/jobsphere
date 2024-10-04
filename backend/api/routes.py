@@ -7,7 +7,6 @@ def register_routes(app):
     @app.route('/jobs', methods=['POST'])
     def create_job():
         data = request.json
-        print(data)
         if isinstance(data, list):
             jobs = []
             for job in data:
