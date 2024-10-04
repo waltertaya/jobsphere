@@ -1,0 +1,19 @@
+name: Deploy Backend on Render
+
+on:
+  push:
+    paths:
+      - 'backend/**'
+      - '!**/README.md'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      - name: Deploy to Render
+        run: |
+          curl -X POST https://api.render.com/deploy/{YOUR_SERVICE_ID} \
+          -H 'Authorization: Bearer {YOUR_API_KEY}'
