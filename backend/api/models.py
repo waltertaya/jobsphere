@@ -23,12 +23,3 @@ class Job(db.Model):
             'date_posted': self.date_posted,
             'logo_src': self.logo_src
         }
-    
-    @staticmethod
-    def save_all(jobs):
-        try:
-            db.session.bulk_save_objects(jobs)
-            db.session.commit()
-        except Exception as e:
-            db.session.rollback()
-            raise e

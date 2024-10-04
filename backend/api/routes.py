@@ -1,11 +1,13 @@
+from flask import jsonify, request
 from .models import Job
-from flask import request
+from . import db
 
 
 def register_routes(app):
     @app.route('/jobs', methods=['POST'])
     def create_job():
         data = request.json
+        print(data)
         if isinstance(data, list):
             jobs = []
             for job in data:
@@ -16,8 +18,14 @@ def register_routes(app):
                     logo_src=job['logo_src']
                 )
                 jobs.append(new_job)
-            Job.save_all(jobs)
-            return {'message': 'Jobs created successfully'}, 201
+            print(jobs)
+            try:
+                db.session.add_all(jobs)
+                db.session.commit()
+                return {'message': 'Jobs created successfully'}, 201
+            except Exception as e:
+                db.session.rollback()
+                return jsonify({'error': str(e)}), 500 
         else:
             new_job = Job(
                 title=data['title'],
@@ -25,5 +33,10 @@ def register_routes(app):
                 salary=data['salary'],
                 logo_src=data['logo_src']
             )
-            new_job.save()
-            return {'message': 'Job created successfully'}, 201
+            try:
+                db.session.add(new_job)
+                db.session.commit()
+                return {'message': 'Job created successfully'}, 201
+            except Exception as e:
+                db.session.rollback()
+                return jsonify({'error': str(e)}), 500
