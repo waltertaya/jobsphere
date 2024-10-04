@@ -9,3 +9,4 @@ test:
 .PHONY: clean
 clean:
 	rm -rf __pycache__ tests/__pycache__ tests/*.pyc
+	rm -rf */__pycache__ */*.pyc
