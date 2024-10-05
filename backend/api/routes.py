@@ -25,7 +25,7 @@ def register_routes(app):
                 return jsonify({'error': 'Unauthorized. Invalid or missing API key.'}), 401
         return wrapper
 
-    @app.route('/jobs', methods=['POST'])
+    @app.route('/api/v1/jobs', methods=['POST'])
     @require_api_key
     def create_job():
         data = request.json
@@ -63,13 +63,13 @@ def register_routes(app):
                 db.session.rollback()
                 return jsonify({'error': str(e)}), 500
     
-    @app.route('/jobs', methods=['GET'])
+    @app.route('/api/v1/jobs', methods=['GET'])
     @require_api_key
     def get_jobs():
         jobs = Job.query.all()
         return jsonify([job.to_dict() for job in jobs])
     
-    @app.route('/jobs/<int:job_id>', methods=['GET'])
+    @app.route('/api/v1/jobs/<int:job_id>', methods=['GET'])
     @require_api_key
     def get_job(job_id):
         job = Job.query.get(job_id)
@@ -77,7 +77,7 @@ def register_routes(app):
             return jsonify(job.to_dict())
         return {'error': 'Job not found'}, 404
     
-    @app.route('/jobs/<int:job_id>', methods=['PUT'])
+    @app.route('/api/v1/jobs/<int:job_id>', methods=['PUT'])
     @require_api_key
     def update_job(job_id):
         job = Job.query.get(job_id)
@@ -96,7 +96,7 @@ def register_routes(app):
                 return jsonify({'error': str(e)}), 500
         return {'error': 'Job not found'}, 404
     
-    @app.route('/jobs/<int:job_id>', methods=['DELETE'])
+    @app.route('/api/v1/jobs/<int:job_id>', methods=['DELETE'])
     @require_api_key
     def delete_job(job_id):
         job = Job.query.get(job_id)
