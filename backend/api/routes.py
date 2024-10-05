@@ -1,12 +1,32 @@
-from flask import jsonify, request
+from flask import jsonify, request, abort
+from functools import wraps
+
 from .models import Job
 from . import db
 
+import dotenv
+import os
 import datetime
+
+dotenv.load_dotenv()
+
+API_KEY = os.getenv('API_KEY')
 
 
 def register_routes(app):
+
+    def require_api_key(func):
+        @wraps(func)
+        def wrapper(*args, **kwargs):
+            if request.headers.get('x-api-key') == API_KEY:
+                return func(*args, **kwargs)
+            else:
+                # abort(401, description="Unauthorized. Invalid or missing API key.")
+                return jsonify({'error': 'Unauthorized. Invalid or missing API key.'}), 401
+        return wrapper
+
     @app.route('/jobs', methods=['POST'])
+    @require_api_key
     def create_job():
         data = request.json
         if isinstance(data, list):
@@ -44,11 +64,13 @@ def register_routes(app):
                 return jsonify({'error': str(e)}), 500
     
     @app.route('/jobs', methods=['GET'])
+    @require_api_key
     def get_jobs():
         jobs = Job.query.all()
         return jsonify([job.to_dict() for job in jobs])
     
     @app.route('/jobs/<int:job_id>', methods=['GET'])
+    @require_api_key
     def get_job(job_id):
         job = Job.query.get(job_id)
         if job:
@@ -56,6 +78,7 @@ def register_routes(app):
         return {'error': 'Job not found'}, 404
     
     @app.route('/jobs/<int:job_id>', methods=['PUT'])
+    @require_api_key
     def update_job(job_id):
         job = Job.query.get(job_id)
         if job:
@@ -74,6 +97,7 @@ def register_routes(app):
         return {'error': 'Job not found'}, 404
     
     @app.route('/jobs/<int:job_id>', methods=['DELETE'])
+    @require_api_key
     def delete_job(job_id):
         job = Job.query.get(job_id)
         if job:
