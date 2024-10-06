@@ -51,24 +51,6 @@ const Header: React.FC = () => {
           >
             Job Listings
           </NavLink>
-          <NavLink
-            href="/"
-            isActive={location.pathname === '/resources'}
-          >
-            Resources
-          </NavLink>
-          <NavLink
-            href="/"
-            isActive={location.pathname === '/about-us'}
-          >
-            About us
-          </NavLink>
-          <NavLink
-            href="/"
-            isActive={location.pathname === '/contact-us'}
-          >
-            Contact Us
-          </NavLink>
         </div>
         <Link
           to="/"
