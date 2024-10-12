@@ -6,7 +6,7 @@ const JobListings: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('https://jobsphere-v2.onrender.com/api/v1/jobs', {
+    fetch('https://jobsphere-v3.onrender.com/api/v1/jobs', {
       headers: {
         'x-api-key': '9fbd769c8a2a4e0am6a26f47562620c2',
       },
