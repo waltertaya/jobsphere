@@ -38,6 +38,11 @@ def register_routes(app):
                     location=job['location'],
                     salary=job['salary'],
                     logo_src=job['logo_src'],
+                    company=job['company'],
+                    description=job['description'],
+                    requirements=job['requirements'],
+                    apply_link=job['apply_link'],
+                    responsibilities=job['responsibilities']
                 )
                 jobs.append(new_job)
             try:
@@ -53,7 +58,12 @@ def register_routes(app):
                 type=data['type'],
                 location=data['location'],
                 salary=data['salary'],
-                logo_src=data['logo_src']
+                logo_src=data['logo_src'],
+                company=data['company'],
+                description=data['description'],
+                requirements=data['requirements'],
+                apply_link=data['apply_link'],
+                responsibilities=data['responsibilities']
             )
             try:
                 db.session.add(new_job)
@@ -88,6 +98,11 @@ def register_routes(app):
             job.location = data['location']
             job.salary = data['salary']
             job.logo_src = data['logo_src']
+            job.company = data['company']
+            job.description = data['description']
+            job.requirements = data['requirements']
+            job.apply_link = data['apply_link']
+            job.responsibilities = data['responsibilities']
             try:
                 db.session.commit()
                 return {'message': 'Job updated successfully'}, 200

@@ -2,7 +2,7 @@
     {
         "date_posted": "Thu, 03 Oct 2024 10:04:36 GMT",
         "location": "San Francisco",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/47ce063b80a03e93be956d3888423b13f0c645e8a630a47c40f5cb561110264c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/47ce063b80a03e93be956d3888423b13f0c645e8a630a47c40f5cb561110264c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$120k/year",
         "title": "Software Engineer",
         "type": "Remote, Full-Time",
@@ -15,7 +15,7 @@
     {
         "date_posted": "Wed, 02 Oct 2024 13:00:30 GMT",
         "location": "New York",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/251843eda5c746c8ccbe8393deb7fa75f013cc17c81a64bd0fa83aa3329f83b6?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/251843eda5c746c8ccbe8393deb7fa75f013cc17c81a64bd0fa83aa3329f83b6?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$90k/year",
         "title": "Data Analyst",
         "type": "Remote, Contract",
@@ -28,7 +28,7 @@
     {
         "date_posted": "Sat, 05 Oct 2024 08:37:17 GMT",
         "location": "Seattle",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1cf692f90694d9ad7b6a9e1ef2dd859c55ae4e843d9f4cebc464d85ea53248c0?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/1cf692f90694d9ad7b6a9e1ef2dd859c55ae4e843d9f4cebc464d85ea53248c0?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$110k/year",
         "title": "Project Manager",
         "type": "On-site, Full-Time",
@@ -41,7 +41,7 @@
     {
         "date_posted": "Tue, 01 Oct 2024 08:04:36 GMT",
         "location": "Austin",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/2709603e7e80f9a6095b2274d0bebaece76fc6c821c3f8fd4aa3fadc9cfe4cd5?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/2709603e7e80f9a6095b2274d0bebaece76fc6c821c3f8fd4aa3fadc9cfe4cd5?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$85k/year",
         "title": "UI/UX Designer",
         "type": "Remote, Full-Time",
@@ -54,7 +54,7 @@
     {
         "date_posted": "Sat, 05 Oct 2024 08:37:17 GMT",
         "location": "Boston",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/930986651bc9d8d80022b1349d06bee5ac26fada6f0518c5cbe2cbfbaf8ab631?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/930986651bc9d8d80022b1349d06bee5ac26fada6f0518c5cbe2cbfbaf8ab631?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$95k/year",
         "title": "Backend Developer",
         "type": "Remote, Part-Time",
@@ -67,7 +67,7 @@
     {
         "date_posted": "Wed, 02 Oct 2024 16:04:36 GMT",
         "location": "Chicago",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/92fa58002bc6bb26edb4b1c7ada92a4e6d95198477aed359408116964dff1f8c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/92fa58002bc6bb26edb4b1c7ada92a4e6d95198477aed359408116964dff1f8c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$65k/year",
         "title": "Content Writer",
         "type": "Remote, Freelance",
@@ -80,7 +80,7 @@
     {
         "date_posted": "Thu, 03 Oct 2024 16:04:36 GMT",
         "location": "Los Angeles",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/082c7dce74bf22afeff13ef7f4c4ea112c2e0f82311dde8d6d92fed4699a23d2?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/082c7dce74bf22afeff13ef7f4c4ea112c2e0f82311dde8d6d92fed4699a23d2?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$115k/year",
         "title": "Sales Manager",
         "type": "On-site, Full-Time",
@@ -93,7 +93,7 @@
     {
         "date_posted": "Fri, 04 Oct 2024 16:04:36 GMT",
         "location": "Miami",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1478917441dd521533d0fcd3b1de443852dc3a140eebaa9a7e6ef8d329efec5d?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/1478917441dd521533d0fcd3b1de443852dc3a140eebaa9a7e6ef8d329efec5d?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$75k/year",
         "title": "Marketing Specialist",
         "type": "Remote, Full-Time",
@@ -106,7 +106,7 @@
     {
         "date_posted": "Mon, 30 Sep 2024 14:04:36 GMT",
         "location": "Dallas",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/2528643fa94e4b0d2e5953247a3b1dd8be7f37312994dc6e9390e67b5721e552?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/2528643fa94e4b0d2e5953247a3b1dd8be7f37312994dc6e9390e67b5721e552?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$80k/year",
         "title": "Network Engineer",
         "type": "On-site, Full-Time",
@@ -119,7 +119,7 @@
     {
         "date_posted": "Sat, 28 Sep 2024 08:04:36 GMT",
         "location": "Atlanta",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/178d674b0e2846bbfed6f77b35537678b1d14c6bbd88d3204dfeee287ac5c95e?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/178d674b0e2846bbfed6f77b35537678b1d14c6bbd88d3204dfeee287ac5c95e?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$70k/year",
         "title": "Customer Support Specialist",
         "type": "Remote, Full-Time",
@@ -132,7 +132,7 @@
     {
         "date_posted": "Sun, 29 Sep 2024 10:04:36 GMT",
         "location": "San Diego",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/32e9dcd6b4144cb1a857658ad74a4749f527fc3147d26dbaedcd21020fdffeb7?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/32e9dcd6b4144cb1a857658ad74a4749f527fc3147d26dbaedcd21020fdffeb7?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$60k/year",
         "title": "Graphic Designer",
         "type": "Remote, Freelance",
@@ -145,7 +145,7 @@
     {
         "date_posted": "Mon, 30 Sep 2024 14:04:36 GMT",
         "location": "Denver",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/2345e8977c924b4f87e8a98e9ff21bc1cf278ec54132f054573c73628f79f5e9?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/2345e8977c924b4f87e8a98e9ff21bc1cf278ec54132f054573c73628f79f5e9?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$95k/year",
         "title": "DevOps Engineer",
         "type": "Remote, Full-Time",
@@ -158,7 +158,7 @@
     {
         "date_posted": "Tue, 01 Oct 2024 12:04:36 GMT",
         "location": "Phoenix",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/ab7b92cc99e2487988b344bdb693dbdb45d1abdd4d2970d93875f923d6b2da61?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/ab7b92cc99e2487988b344bdb693dbdb45d1abdd4d2970d93875f923d6b2da61?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$55k/year",
         "title": "Technical Recruiter",
         "type": "Remote, Full-Time",
@@ -171,7 +171,7 @@
     {
         "date_posted": "Wed, 02 Oct 2024 10:04:36 GMT",
         "location": "Philadelphia",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/04304a53dc964a1eb2bba9d74394c3a50e6c4c2938b06da4403017b61be967b3?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/04304a53dc964a1eb2bba9d74394c3a50e6c4c2938b06da4403017b61be967b3?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$90k/year",
         "title": "Mobile App Developer",
         "type": "Remote, Full-Time",
@@ -184,7 +184,7 @@
     {
         "date_posted": "Thu, 03 Oct 2024 14:04:36 GMT",
         "location": "Portland",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/f5bb9e72898d4a5da946bb3c19a68e36f9b69d1aa206f2c91e06b96f0de4c048?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/f5bb9e72898d4a5da946bb3c19a68e36f9b69d1aa206f2c91e06b96f0de4c048?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$100k/year",
         "title": "Systems Administrator",
         "type": "On-site, Full-Time",
@@ -197,7 +197,7 @@
     {
         "date_posted": "Tue, 01 Oct 2024 10:04:36 GMT",
         "location": "Detroit",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/6431ecab1a29b3bc894b476a59b060953558c38b748c4da8cfa2629f7168d755?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/6431ecab1a29b3bc894b476a59b060953558c38b748c4da8cfa2629f7168d755?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$85k/year",
         "title": "Product Designer",
         "type": "Remote, Full-Time",
@@ -210,7 +210,7 @@
     {
         "date_posted": "Fri, 04 Oct 2024 12:04:36 GMT",
         "location": "Seattle",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1cf692f90694d9ad7b6a9e1ef2dd859c55ae4e843d9f4cebc464d85ea53248c0?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/1cf692f90694d9ad7b6a9e1ef2dd859c55ae4e843d9f4cebc464d85ea53248c0?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$110k/year",
         "title": "Project Manager",
         "type": "On-site, Full-Time",
@@ -223,7 +223,7 @@
     {
         "date_posted": "Tue, 01 Oct 2024 08:04:36 GMT",
         "location": "Austin",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/2709603e7e80f9a6095b2274d0bebaece76fc6c821c3f8fd4aa3fadc9cfe4cd5?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/2709603e7e80f9a6095b2274d0bebaece76fc6c821c3f8fd4aa3fadc9cfe4cd5?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$85k/year",
         "title": "UI/UX Designer",
         "type": "Remote, Full-Time",
@@ -236,7 +236,7 @@
     {
         "date_posted": "Sat, 05 Oct 2024 08:37:17 GMT",
         "location": "Boston",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/930986651bc9d8d80022b1349d06bee5ac26fada6f0518c5cbe2cbfbaf8ab631?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/930986651bc9d8d80022b1349d06bee5ac26fada6f0518c5cbe2cbfbaf8ab631?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$95k/year",
         "title": "Backend Developer",
         "type": "Remote, Part-Time",
@@ -249,7 +249,7 @@
     {
         "date_posted": "Wed, 02 Oct 2024 16:04:36 GMT",
         "location": "Chicago",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/92fa58002bc6bb26edb4b1c7ada92a4e6d95198477aed359408116964dff1f8c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/92fa58002bc6bb26edb4b1c7ada92a4e6d95198477aed359408116964dff1f8c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$65k/year",
         "title": "Content Writer",
         "type": "Remote, Freelance",
@@ -262,7 +262,7 @@
     {
         "date_posted": "Thu, 03 Oct 2024 16:04:36 GMT",
         "location": "Los Angeles",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/082c7dce74bf22afeff13ef7f4c4ea112c2e0f82311dde8d6d92fed4699a23d2?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/082c7dce74bf22afeff13ef7f4c4ea112c2e0f82311dde8d6d92fed4699a23d2?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$115k/year",
         "title": "Sales Manager",
         "type": "On-site, Full-Time",
@@ -275,7 +275,7 @@
     {
         "date_posted": "Fri, 04 Oct 2024 16:04:36 GMT",
         "location": "Miami",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1478917441dd521533d0fcd3b1de443852dc3a140eebaa9a7e6ef8d329efec5d?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/1478917441dd521533d0fcd3b1de443852dc3a140eebaa9a7e6ef8d329efec5d?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$75k/year",
         "title": "Marketing Specialist",
         "type": "Remote, Full-Time",
@@ -288,7 +288,7 @@
     {
         "date_posted": "Tue, 01 Oct 2024 16:04:36 GMT",
         "location": "Dallas",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/efd1740275ddf686b4cfe2bb1bf01586b75916409182c851edcc5c805cc5b922?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/efd1740275ddf686b4cfe2bb1bf01586b75916409182c851edcc5c805cc5b922?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$105k/year",
         "title": "Security Analyst",
         "type": "Remote, Full-Time",
@@ -301,7 +301,7 @@
     {
         "date_posted": "Mon, 07 Oct 2024 08:13:36 GMT",
         "location": "Toronto",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/47ce063b80a03e93be956d3888423b13f0c645e8a630a47c40f5cb561110264c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/47ce063b80a03e93be956d3888423b13f0c645e8a630a47c40f5cb561110264c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$110k/year",
         "title": "Frontend Developer",
         "type": "Remote, Full-Time",
@@ -314,7 +314,7 @@
     {
         "date_posted": "Mon, 07 Oct 2024 08:13:36 GMT",
         "location": "Berlin",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/251843eda5c746c8ccbe8393deb7fa75f013cc17c81a64bd0fa83aa3329f83b6?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/251843eda5c746c8ccbe8393deb7fa75f013cc17c81a64bd0fa83aa3329f83b6?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$130k/year",
         "title": "Machine Learning Engineer",
         "type": "Remote, Contract",
@@ -327,7 +327,7 @@
     {
         "date_posted": "Mon, 07 Oct 2024 08:13:36 GMT",
         "location": "Dublin",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1cf692f90694d9ad7b6a9e1ef2dd859c55ae4e843d9f4cebc464d85ea53248c0?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/1cf692f90694d9ad7b6a9e1ef2dd859c55ae4e843d9f4cebc464d85ea53248c0?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$120k/year",
         "title": "DevOps Engineer",
         "type": "Remote, Full-Time",
@@ -340,7 +340,7 @@
     {
         "date_posted": "Mon, 07 Oct 2024 08:13:36 GMT",
         "location": "London",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/2709603e7e80f9a6095b2274d0bebaece76fc6c821c3f8fd4aa3fadc9cfe4cd5?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/2709603e7e80f9a6095b2274d0bebaece76fc6c821c3f8fd4aa3fadc9cfe4cd5?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$140k/year",
         "title": "Cloud Architect",
         "type": "Remote, Full-Time",
@@ -353,7 +353,7 @@
     {
         "date_posted": "Mon, 07 Oct 2024 08:13:36 GMT",
         "location": "Sydney",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/930986651bc9d8d80022b1349d06bee5ac26fada6f0518c5cbe2cbfbaf8ab631?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/930986651bc9d8d80022b1349d06bee5ac26fada6f0518c5cbe2cbfbaf8ab631?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$100k/year",
         "title": "Full Stack Developer",
         "type": "Remote, Part-Time",
@@ -366,7 +366,7 @@
     {
         "date_posted": "Mon, 07 Oct 2024 08:13:36 GMT",
         "location": "Amsterdam",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/92fa58002bc6bb26edb4b1c7ada92a4e6d95198477aed359408116964dff1f8c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/92fa58002bc6bb26edb4b1c7ada92a4e6d95198477aed359408116964dff1f8c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$70k/year",
         "title": "Technical Writer",
         "type": "Remote, Freelance",
@@ -379,7 +379,7 @@
     {
         "date_posted": "Mon, 07 Oct 2024 08:13:36 GMT",
         "location": "Paris",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/082c7dce74bf22afeff13ef7f4c4ea112c2e0f82311dde8d6d92fed4699a23d2?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/082c7dce74bf22afeff13ef7f4c4ea112c2e0f82311dde8d6d92fed4699a23d2?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$90k/year",
         "title": "Digital Marketing Manager",
         "type": "Remote, Full-Time",
@@ -392,7 +392,7 @@
     {
         "date_posted": "Mon, 07 Oct 2024 08:13:36 GMT",
         "location": "Stockholm",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/1478917441dd521533d0fcd3b1de443852dc3a140eebaa9a7e6ef8d329efec5d?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/1478917441dd521533d0fcd3b1de443852dc3a140eebaa9a7e6ef8d329efec5d?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$85k/year",
         "title": "Product Designer",
         "type": "Remote, Full-Time",
@@ -405,7 +405,7 @@
     {
         "date_posted": "Mon, 07 Oct 2024 08:13:36 GMT",
         "location": "Tokyo",
-        "logoSrc": "https://cdn.builder.io/api/v1/image/assets/TEMP/efd1740275ddf686b4cfe2bb1bf01586b75916409182c851edcc5c805cc5b922?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
+        "logo_src": "https://cdn.builder.io/api/v1/image/assets/TEMP/efd1740275ddf686b4cfe2bb1bf01586b75916409182c851edcc5c805cc5b922?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1",
         "salary": "$115k/year",
         "title": "Cybersecurity Specialist",
         "type": "Remote, Full-Time",
