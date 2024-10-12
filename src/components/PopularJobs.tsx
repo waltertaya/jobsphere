@@ -8,7 +8,7 @@ const highDemandData = [
     description: "Projected growth of 35% by 2025, driven by advancements in machine learning and automation.",
     salaryRange: "$150k - $200k/year",
     growthRate: "35% growth in 5 years",
-    imageSrc: "https://img.freepik.com/free-photo/arab-guy-utilizes-ai-desktop-computer_482257-76214.jpg?size=626&ext=jpg"
+    imageSrc: "https://cdn.prod.website-files.com/60d07e2eecb304cb4350b53f/6481f375cb424c5742b3bfa4_what-is-artificial-intelligence-engineering.webp"
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const highDemandData = [
     description: "Cloud professionals are highly sought after, with companies like AWS and Microsoft Azure leading the charge.",
     salaryRange: "$130k - $180k/year",
     growthRate: "20% growth in cloud-related roles",
-    imageSrc: "https://image.shutterstock.com/image-photo/modern-city-traffic-cloud-computing-450w-2433109191.jpg"
+    imageSrc: "https://t4.ftcdn.net/jpg/03/54/34/51/360_F_354345119_TqAOr4z9cyArqlYl6rhN4pMH4Rkku9VD.jpg"
   },
   {
     id: 3,
@@ -24,10 +24,9 @@ const highDemandData = [
     description: "With increasing digital threats, demand for cybersecurity professionals is at an all-time high.",
     salaryRange: "$120k - $170k/year",
     growthRate: "Expected job growth: 45% over 3 years",
-    imageSrc: "https://media.istockphoto.com/id/1280292816/photo/visualization-of-cyber-attacks.jpg?s=612x612&w=0&k=20&c=AFmpKJ7VjVExP-wrnoJ86Wnqs9qXiOxaw8QcABzsaZY="
+    imageSrc: "https://t3.ftcdn.net/jpg/07/70/98/72/360_F_770987245_9mmE8ctOjYLy45gJHHi9vHeP14jVZhxc.jpg"
   }
 ];
-
 
 const HighDemandJobs: React.FC = () => {
   return (
@@ -37,7 +36,8 @@ const HighDemandJobs: React.FC = () => {
           High Demand Jobs
         </h2>
         <div className="mt-9 w-full max-md:max-w-full">
-          <div className="grid grid-cols-3 gap-5 max-md:grid-cols-1">
+          {/* Updated grid layout */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {highDemandData.map((trendItem, index) => (
               <HighDemandCard key={index} {...trendItem} />
             ))}
@@ -47,6 +47,5 @@ const HighDemandJobs: React.FC = () => {
     </section>
   );
 };
-
 
 export default HighDemandJobs;
