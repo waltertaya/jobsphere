@@ -3,6 +3,7 @@ import JobCard from './JobCard';
 
 const jobData = [
   {
+    id: 1,
     title: "Software Engineer",
     type: "Remote, Full-Time",
     location: "San Francisco",
@@ -11,6 +12,7 @@ const jobData = [
     logoSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/47ce063b80a03e93be956d3888423b13f0c645e8a630a47c40f5cb561110264c?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1"
   },
   {
+    id: 2,
     title: "Data Analyst",
     type: "Remote, Contract",
     location: "New York",
@@ -19,6 +21,7 @@ const jobData = [
     logoSrc: "https://cdn.builder.io/api/v1/image/assets/TEMP/251843eda5c746c8ccbe8393deb7fa75f013cc17c81a64bd0fa83aa3329f83b6?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1"
   },
   {
+    id: 3,
     title: "Security Analyst",
     type: "Remote, Full-Time",
     location: "Dallas",

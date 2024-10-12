@@ -1,6 +1,7 @@
 import React from 'react';
 
 interface JobCardProps {
+  id: number;
   title: string;
   type: string;
   location: string;
@@ -10,7 +11,7 @@ interface JobCardProps {
 }
 
 
-const JobCard: React.FC<JobCardProps> = ({ title, type, location, salary, postedDays, logoSrc }) => {
+const JobCard: React.FC<JobCardProps> = ({ title, type, location, salary, postedDays, logoSrc, id }) => {
   return (
     <div className="flex grow gap-7 p-4 w-full text-sm bg-white rounded-md shadow-[0px_0px_2px_rgba(23,26,31,0.12)] text-zinc-400 transition-transform transform-gpu hover:scale-105">
       <div className="flex flex-col flex-1">
@@ -19,7 +20,7 @@ const JobCard: React.FC<JobCardProps> = ({ title, type, location, salary, posted
         <p className="mt-2 leading-6 rotate-[2.4492937051703357e-16rad]">
           {location} | {salary} | Posted {postedDays} days ago
         </p>
-        <a href="/see-more" className="overflow-hidden self-start px-3 py-2 mt-9 leading-loose text-indigo-500 bg-white rounded-md border border-indigo-500 border-solid rotate-[2.4492937051703357e-16rad]">
+        <a href={`/see-more?job_id=${id}`} className="overflow-hidden self-start px-3 py-2 mt-9 leading-loose text-indigo-500 bg-white rounded-md border border-indigo-500 border-solid rotate-[2.4492937051703357e-16rad]">
           See more
         </a>
       </div>

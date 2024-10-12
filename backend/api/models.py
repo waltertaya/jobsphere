@@ -33,4 +33,5 @@ class Job(db.Model):
             'description': self.description,
             'requirements': self.requirements,
             'applyLink': self.apply_link,
+            'responsibilities': self.responsibilities
         }
