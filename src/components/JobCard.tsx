@@ -11,7 +11,7 @@ interface JobCardProps {
 
 const JobCard: React.FC<JobCardProps> = ({ title, type, location, salary, postedDays, logoSrc }) => {
   return (
-    <div className="flex grow gap-7 p-4 w-full text-sm bg-white rounded-md shadow-[0px_0px_2px_rgba(23,26,31,0.12)] text-zinc-400">
+    <div className="flex grow gap-7 p-4 w-full text-sm bg-white rounded-md shadow-[0px_0px_2px_rgba(23,26,31,0.12)] text-zinc-400 transition-transform transform-gpu hover:scale-105">
       <div className="flex flex-col flex-1">
         <h3 className="text-xl rotate-[2.4492937051703357e-16rad] text-zinc-900">{title}</h3>
         <p className="self-start mt-12 leading-loose rotate-[2.4492937051703357e-16rad] max-md:mt-10">{type}</p>
