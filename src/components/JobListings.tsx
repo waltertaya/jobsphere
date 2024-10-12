@@ -22,10 +22,6 @@ const JobListings: React.FC = () => {
       });
   }, []);
 
-  // if loading is true, the component should display the loading circle at the center of the page (rotating circle)
-  // if (loading) {
-  //   return <div>Loading...</div>;
-  // }
   if (loading) {
     return (
       <div className="flex justify-center items-center w-full h-full">

@@ -53,7 +53,7 @@ const Header: React.FC = () => {
           </NavLink>
         </div>
         <Link
-          to="/"
+          to="/auth"
           className="overflow-hidden px-14 py-2 my-auto text-white bg-indigo-500 rounded-lg border border-solid border-black border-opacity-0 rotate-[2.4492937051703357e-16rad] max-md:px-5"
         >
           Join Us
