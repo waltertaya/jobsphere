@@ -17,7 +17,7 @@ const SeeMore: React.FC = () => {
     // Fetch job data from the API
     const fetchJobData = async () => {
       try {
-        const response = await fetch(`https://jobsphere-v3.onrender.com/api/v1/jobs/${jobId}`, {
+        const response = await fetch(`https://jobsphere-v4.onrender.com/api/v1/jobs/${jobId}`, {
           headers: {
             'x-api-key': '9fbd769c8a2a4e0am6a26f47562620c2',
           },
