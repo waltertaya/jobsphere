@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                   <form className="flex gap-px self-stretch mt-2 leading-loose">
                     <div className="flex flex-auto gap-1.5 self-start px-3 py-2 bg-gray-200 rounded-md border border-solid border-black border-opacity-0 text-neutral-300">
                       <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/38e59d030571619f19120b6597142bccd5f8998d6c0c5ca443b53ff6c1941f86?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1" alt="" className="object-contain shrink-0 my-auto w-4 aspect-square" />
-                      <input type="email" placeholder="Input your email" aria-label="Input your email" className="bg-transparent border-none outline-none" />
+                      <input type="email" placeholder="Input your email" aria-label="Input your email" className="bg-transparent border-none outline-none " />
                     </div>
                     <button type="submit" className="overflow-hidden px-6 py-2 text-white whitespace-nowrap bg-indigo-500 rounded-none border border-solid border-black border-opacity-0 rotate-[2.4492937051703357e-16rad] max-md:px-5">
                       Subscribe
