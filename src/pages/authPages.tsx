@@ -45,7 +45,7 @@ const AuthPage: React.FC = () => {
     try {
       if (isLogin) {
         // Send login request
-        const response = await axios.post('http://127.0.0.1:8000/auth/v1/login', {
+        const response = await axios.post('https://auth-jobsphere-v1.onrender.com/auth/v1/login', {
           email: formData.email,
           password: formData.password,
         });
@@ -58,7 +58,7 @@ const AuthPage: React.FC = () => {
         navigate('/');
       } else {
         // Send registration request
-        await axios.post('http://127.0.0.1:8000/auth/v1/register', {
+        await axios.post('https://auth-jobsphere-v1.onrender.com/auth/v1/register', {
           name: formData.name,
           email: formData.email,
           password: formData.password,
