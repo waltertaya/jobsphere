@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Logout from './Logout';
 
 interface NavLinkProps {
   href: string;
@@ -10,7 +11,7 @@ interface NavLinkProps {
 const NavLink: React.FC<NavLinkProps> = ({ href, children, isActive }) => (
   <Link
     to={href}
-    className={`overflow-hidden px-3 py-4 rounded-md bg-black bg-opacity-0 ${
+    className={`overflow-hidden px-3 py-4 rounded-md ${
       isActive ? 'font-bold text-indigo-500' : 'text-gray-600'
     }`}
   >
@@ -22,27 +23,26 @@ const NavLink: React.FC<NavLinkProps> = ({ href, children, isActive }) => (
 );
 
 const Header: React.FC = () => {
-  const location = useLocation(); // Use the current location
+  const location = useLocation();
+  const token = localStorage.getItem('token');
 
   return (
-    <header className="flex flex-wrap gap-10 px-6 py-0.5 w-full bg-white shadow-[0px_0px_2px_rgba(23,26,31,0.12)] max-md:px-5 max-md:max-w-full">
-      <div className="flex shrink gap-2.5 my-auto text-3xl text-black basis-auto grow-0">
+    <header className="flex flex-col items-center w-full px-6 py-2 bg-white shadow-[0px_0px_2px_rgba(23,26,31,0.12)]">
+      {/* Logo and Name Section (Clickable) */}
+      <Link to="/" className="flex items-center gap-2.5 text-3xl text-black">
         <img
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/92f31eb56999abf644233e1c0f153f9aa5c68d1f54f23952e0e990c991f52688?placeholderIfAbsent=true&apiKey=6fbd76ec4a2a4e9aa6a26f47562625c1"
           alt=""
-          className="object-contain shrink-0 my-auto w-9 aspect-square"
+          className="object-contain w-9 aspect-square"
         />
-        <div className="basis-auto rotate-[2.4492937051703357e-16rad]">
-          JobSphere
-        </div>
-      </div>
-      <nav className="flex flex-wrap flex-auto gap-10 text-sm leading-loose max-md:max-w-full">
-        <div className="flex text-gray-600 bg-black bg-opacity-0 max-md:max-w-full">
-          <NavLink
-            href="/"
-            isActive={location.pathname === '/'} // Check if the path matches
-          >
+        <div>JobSphere</div>
+      </Link>
+
+      {/* Navigation and Buttons (Horizontal Below Logo) */}
+      <div className="flex items-center justify-between w-full mt-4 max-w-4xl">
+        <nav className="flex flex-grow gap-5 text-sm leading-loose">
+          <NavLink href="/" isActive={location.pathname === '/'}>
             Home
           </NavLink>
           <NavLink
@@ -51,14 +51,22 @@ const Header: React.FC = () => {
           >
             Job Listings
           </NavLink>
+        </nav>
+
+        {/* Join Us or Logout Button */}
+        <div className="flex items-center gap-5">
+          {!token ? (
+            <Link
+              to="/auth"
+              className="px-4 py-2 text-white bg-indigo-500 rounded-lg"
+            >
+              Join Us
+            </Link>
+          ) : (
+            <Logout />
+          )}
         </div>
-        <Link
-          to="/auth"
-          className="overflow-hidden px-14 py-2 my-auto text-white bg-indigo-500 rounded-lg border border-solid border-black border-opacity-0 rotate-[2.4492937051703357e-16rad] max-md:px-5"
-        >
-          Join Us
-        </Link>
-      </nav>
+      </div>
     </header>
   );
 };
