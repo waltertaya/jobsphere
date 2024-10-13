@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faGoogle, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { faUser, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
+import axios from 'axios'; // Import axios
+import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation after login
 
 const AuthPage: React.FC = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -15,6 +17,8 @@ const AuthPage: React.FC = () => {
     email: false,
     password: false,
   });
+  const [error, setError] = useState<string | null>(null); // For handling errors
+  const navigate = useNavigate(); // To redirect after login
 
   const handleBlur = (field: keyof typeof formData) => {
     setTouched({
@@ -34,12 +38,43 @@ const AuthPage: React.FC = () => {
   const isFieldInvalid = (field: keyof typeof formData) =>
     touched[field] && !formData[field];
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setError(null); // Reset any previous errors
+
+    try {
+      if (isLogin) {
+        // Send login request
+        const response = await axios.post('http://127.0.0.1:8000/auth/v1/login', {
+          email: formData.email,
+          password: formData.password,
+        });
+
+        // Store the JWT token in localStorage
+        console.log(response.data);
+        localStorage.setItem('token', response.data.access_token);
+
+        // Redirect to a protected route (e.g., dashboard)
+        navigate('/');
+      } else {
+        // Send registration request
+        await axios.post('http://127.0.0.1:8000/auth/v1/register', {
+          name: formData.name,
+          email: formData.email,
+          password: formData.password,
+        });
+
+        // After successful registration, switch to login view
+        setIsLogin(true);
+      }
+    } catch (err) {
+      setError('wrong email or password. Please try again.');
+    }
+  };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      {/* Main Container */}
       <div className="flex flex-col md:flex-row w-full max-w-4xl bg-white rounded-lg shadow-lg overflow-hidden">
-        
-        {/* Left Side */}
         <div className="w-full md:w-1/2 bg-indigo-500 flex flex-col justify-center items-center text-white p-8">
           <h1 className="text-3xl font-bold mb-4">{isLogin ? 'Join Us!' : 'Welcome Back!'}</h1>
           <p className="text-base mb-6 text-center">
@@ -51,13 +86,11 @@ const AuthPage: React.FC = () => {
             onClick={() => setIsLogin(!isLogin)}
             className="bg-white text-indigo-500 py-2 px-6 rounded-full text-lg font-semibold shadow-md hover:bg-gray-100"
           >
-            {isLogin ? 'Create Account' : 'Sign In' }
+            {isLogin ? 'Create Account' : 'Sign In'}
           </button>
         </div>
 
-        {/* Right Side */}
         <div className="w-full md:w-1/2 flex flex-col justify-center items-center p-8 bg-white">
-          {/* Logo and Name */}
           <div className="flex items-center gap-3 mb-8 text-3xl text-indigo-500">
             <img
               loading="lazy"
@@ -68,10 +101,8 @@ const AuthPage: React.FC = () => {
             <span className="font-semibold">JobSphere</span>
           </div>
 
-          {/* Form Heading */}
           <h2 className="text-2xl font-bold mb-6">{isLogin ? 'Sign In' : 'Create Account'}</h2>
 
-          {/* Social Buttons */}
           <div className="flex space-x-4 mb-6">
             <button className="bg-gray-200 p-3 rounded-full text-lg">
               <FontAwesomeIcon icon={faFacebookF} />
@@ -86,8 +117,7 @@ const AuthPage: React.FC = () => {
 
           <p className="text-gray-500 mb-4">or use your email for registration:</p>
 
-          {/* Form Fields */}
-          <form className="space-y-4 w-full max-w-xs">
+          <form onSubmit={handleSubmit} className="space-y-4 w-full max-w-xs">
             {!isLogin && (
               <div className="relative">
                 <FontAwesomeIcon icon={faUser} className="absolute top-3 left-3 text-gray-400" />
@@ -139,6 +169,9 @@ const AuthPage: React.FC = () => {
               {isLogin ? 'Sign In' : 'Sign Up'}
             </button>
           </form>
+
+          {/* Show error message if any */}
+          {error && <p className="text-red-500 mt-4">{error}</p>}
         </div>
       </div>
     </div>
