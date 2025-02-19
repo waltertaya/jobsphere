@@ -44,6 +44,8 @@ const AuthPage: React.FC = () => {
     setError(null);
     setSuccessMessage(null);  // Reset success message
 
+    console.log(formData.email, formData.name, formData.password)
+
     try {
       if (isLogin) {
         // Send login request
@@ -51,6 +53,8 @@ const AuthPage: React.FC = () => {
           email: formData.email,
           password: formData.password,
         });
+
+        console.log(formData.email);
 
         // Store the JWT token in localStorage
         localStorage.setItem('token', response.data.access_token);
