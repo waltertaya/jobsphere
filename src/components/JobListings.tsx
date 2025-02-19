@@ -7,10 +7,10 @@ const JobListings: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('https://jobsphere-v4.onrender.com/api/v1/jobs', {
-      headers: {
-        'x-api-key': '9fbd769c8a2a4e0am6a26f47562620c2',
-      },
+    fetch('http://20.127.190.72/api/api/v1/jobs', {
+      // headers: {
+      //   'x-api-key': '9fbd769c8a2a4e0am6a26f47562620c2',
+      // },
     })
       .then((response) => response.json())
       .then((data) => {

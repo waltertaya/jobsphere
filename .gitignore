@@ -32,3 +32,6 @@ Authentication/.env.local
 Authentication/venv
 Authentication/__pycache__/
 Authentication/*/__pycache__/
+
+venv/
+    
