@@ -7,7 +7,7 @@ const JobListings: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('http://20.127.190.72/api/api/v1/jobs', {
+    fetch('https://waltertayarg.me/api/api/v1/jobs', {
       // headers: {
       //   'x-api-key': '9fbd769c8a2a4e0am6a26f47562620c2',
       // },

@@ -49,7 +49,7 @@ const AuthPage: React.FC = () => {
     try {
       if (isLogin) {
         // Send login request
-        const response = await axios.post('http://20.127.190.72/auth/auth/v1/login', {
+        const response = await axios.post('https://waltertayarg.me/auth/auth/v1/login', {
           email: formData.email,
           password: formData.password,
         });
@@ -61,7 +61,7 @@ const AuthPage: React.FC = () => {
         navigate('/');  // Redirect after login
       } else {
         // Send registration request
-        await axios.post('http://20.127.190.72/auth/auth/v1/register', {
+        await axios.post('https://waltertayarg.me/auth/auth/v1/register', {
           name: formData.name,
           email: formData.email,
           password: formData.password,
