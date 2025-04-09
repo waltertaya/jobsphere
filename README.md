@@ -14,6 +14,7 @@ JobSphere is a comprehensive platform that aggregates both remote and on-site te
 - Node.js
 - React
 - Any package manager (npm, yarn)
+- Python
 
 ### Installation
 
