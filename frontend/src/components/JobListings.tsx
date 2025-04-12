@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import JobCard from './JobCard';
 
+
 const JobListings: React.FC = () => {
   const [jobData, setJobData] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
   const [searchTerm, setSearchTerm] = useState('');
 
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
   useEffect(() => {
-    fetch('https://waltertayarg.me/api/api/v1/jobs', {
-      // headers: {
-      //   'x-api-key': '9fbd769c8a2a4e0am6a26f47562620c2',
-      // },
+    fetch(`${API_BASE_URL}/api/api/v1/jobs`, {
     })
       .then((response) => response.json())
       .then((data) => {

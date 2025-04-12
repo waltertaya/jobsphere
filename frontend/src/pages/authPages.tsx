@@ -21,6 +21,8 @@ const AuthPage: React.FC = () => {
   const [successMessage, setSuccessMessage] = useState<string | null>(null);
   const navigate = useNavigate();
 
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
   const handleBlur = (field: keyof typeof formData) => {
     setTouched({
       ...touched,
@@ -49,7 +51,7 @@ const AuthPage: React.FC = () => {
     try {
       if (isLogin) {
         // Send login request
-        const response = await axios.post('https://waltertayarg.me/auth/auth/v1/login', {
+        const response = await axios.post(`${API_BASE_URL}/auth/auth/v1/login`, {
           email: formData.email,
           password: formData.password,
         });
@@ -61,7 +63,7 @@ const AuthPage: React.FC = () => {
         navigate('/');  // Redirect after login
       } else {
         // Send registration request
-        await axios.post('https://waltertayarg.me/auth/auth/v1/register', {
+        await axios.post(`${API_BASE_URL}/auth/auth/v1/register`, {
           name: formData.name,
           email: formData.email,
           password: formData.password,

@@ -5,6 +5,8 @@ const SeeMore: React.FC = () => {
   const [jobData, setJobData] = useState<any>(null);  // State to hold job data
   const location = useLocation();
 
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+
   // Function to get job_id from URL query string
   const getJobIdFromUrl = () => {
     const params = new URLSearchParams(location.search);
@@ -17,10 +19,7 @@ const SeeMore: React.FC = () => {
     // Fetch job data from the API
     const fetchJobData = async () => {
       try {
-        const response = await fetch(`https://waltertayarg.me/api/api/v1/jobs/${jobId}`, {
-          // headers: {
-          //   'x-api-key': '9fbd769c8a2a4e0am6a26f47562620c2',
-          // },
+        const response = await fetch(`${API_BASE_URL}/api/api/v1/jobs/${jobId}`, {
         });
         if (!response.ok) {
           throw new Error('Failed to fetch job data');
