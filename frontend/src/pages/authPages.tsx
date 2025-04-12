@@ -109,13 +109,16 @@ const AuthPage: React.FC = () => {
 
           {/* Social media icons */}
           <div className="flex justify-center space-x-4 mb-6">
-            <button className="p-3 bg-blue-600 rounded-full text-white shadow-lg hover:bg-blue-700">
+            <button
+              className="p-3 bg-blue-600 rounded-full text-white shadow-lg hover:bg-blue-700"
+              title="Sign in with Facebook"
+            >
               <FontAwesomeIcon icon={faFacebookF} />
             </button>
-            <button className="p-3 bg-red-600 rounded-full text-white shadow-lg hover:bg-red-700">
+            <button className="p-3 bg-red-600 rounded-full text-white shadow-lg hover:bg-red-700" title="Sign in with Google">
               <FontAwesomeIcon icon={faGoogle} />
             </button>
-            <button className="p-3 bg-blue-800 rounded-full text-white shadow-lg hover:bg-blue-900">
+            <button className="p-3 bg-blue-800 rounded-full text-white shadow-lg hover:bg-blue-900" title="Sign in with LinkedIn">
               <FontAwesomeIcon icon={faLinkedinIn} />
             </button>
           </div>
