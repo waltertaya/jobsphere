@@ -15,6 +15,8 @@ const SeeMore: React.FC = () => {
 
   useEffect(() => {
     const jobId = getJobIdFromUrl();
+
+    console.log(`${API_BASE_URL}/api/api/v1/jobs/${jobId}`)
     
     // Fetch job data from the API
     const fetchJobData = async () => {
